@@ -232,6 +232,19 @@ It’s perfectly fine to run the Gateway on a small Linux instance. Clients (mac
 
 Details: [Remote access](https://docs.openclaw.ai/gateway/remote) · [Nodes](https://docs.openclaw.ai/nodes) · [Security](https://docs.openclaw.ai/gateway/security)
 
+## Cloud & VPS Deployment
+
+OpenClaw can be deployed to various cloud platforms for always-on operation:
+
+- **[Azure Functions](https://docs.openclaw.ai/install/azure)** — Serverless deployment with Azure Table Storage and Blob Storage (low-cost, pay-per-use)
+- **[VPS Hosting Hub](https://docs.openclaw.ai/vps)** — Full guide to cloud providers (Oracle, Fly.io, Hetzner, GCP, exe.dev, AWS)
+- **[Docker](https://docs.openclaw.ai/install/docker)** — Containerized deployment for any platform
+- **[Fly.io](https://docs.openclaw.ai/install/fly)** — Quick deployment to Fly.io
+- **[GCP Compute Engine](https://docs.openclaw.ai/install/gcp)** — Deployment guide for Google Cloud Platform
+- **[Hetzner](https://docs.openclaw.ai/install/hetzner)** — Docker-based deployment on Hetzner Cloud
+
+For serverless or low-cost deployments, Azure Functions offers the best balance of cost and features with built-in support for Table Storage (memory) and Blob Storage (sessions).
+
 ## macOS permissions via the Gateway protocol
 
 The macOS app can run in **node mode** and advertises its capabilities + permission map over the Gateway WebSocket (`node.list` / `node.describe`). Clients can then execute local actions via `node.invoke`:

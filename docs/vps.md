@@ -13,6 +13,7 @@ deployments work at a high level.
 
 ## Pick a provider
 
+- **Azure Functions** (serverless + low-cost): [Azure](/install/azure) — Pay-per-use serverless deployment with Azure Table Storage and Blob Storage
 - **Railway** (one‑click + browser setup): [Railway](/install/railway)
 - **Northflank** (one‑click + browser setup): [Northflank](/install/northflank)
 - **Oracle Cloud (Always Free)**: [Oracle](/platforms/oracle) — $0/month (Always Free, ARM; capacity/signup can be finicky)
