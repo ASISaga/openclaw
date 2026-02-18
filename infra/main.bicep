@@ -75,6 +75,16 @@ resource embeddingCacheTable 'Microsoft.Storage/storageAccounts/tableServices/ta
   name: 'embeddingcache'
 }
 
+resource sovereignUrgencyTable 'Microsoft.Storage/storageAccounts/tableServices/tables@2023-05-01' = {
+  parent: tableServices
+  name: 'sovereignurgency'
+}
+
+resource sovereignArchiveTable 'Microsoft.Storage/storageAccounts/tableServices/tables@2023-05-01' = {
+  parent: tableServices
+  name: 'sovereignarchive'
+}
+
 // ---------------------------------------------------------------------------
 // Log Analytics + Application Insights
 // ---------------------------------------------------------------------------
